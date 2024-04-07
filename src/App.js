@@ -1,30 +1,34 @@
-import Jsx,{Greet} from "./container/Jsx"
-import DataBinding from "./container/DataBinding"
-import Users from "./container/Users"
-import {Routes , Navlink ,Route} from 'react-router-dom'
+import Jsx,{Greet} from"./containers/Jsx";
+import DataBinding from "./containers/DataBinding";
+import Users from './containers/Users'
+import{Routes,NavLink,Route} from 'react-router-dom';
+
 function App(){
-  return (
+  return(
     <div>
-      <nav className="navbar navbar-expand navbar-lght bg-light">
+      <div className="container">
+       <nav className="navbar navbar-expand navbar-light bg-light">
         <ul className="nav navbar-nav">
-          <li className="nav-item">
-            <Navlink className="nav-link" to="/">Jsx</Navlink>
+          <li>
+            <NavLink className="nav-link"to="/users">users</NavLink>
           </li>
-          <li className="nav-item">
-            <Navlink className="nav-link" to="/binding">DataBinding</Navlink>
-          </li>
-          <li className="nav-item">
-            <Navlink className="nav-link" to="/users">Users</Navlink>
+          <li>
+            <NavLink className="nav-link"to="/binding">DataBinding</NavLink>
+          </li><li>
+            <NavLink className="nav-link"to="/">Jsx</NavLink>
           </li>
         </ul>
-      </nav>
-     
-    <Routes>
-        <Route path="/" element={<Jsx/>}></Route>
-        <Route path="/binding" element={<DataBinding/>}></Route>                                                                                     
-        <Route path="/users" element={<Users/>}></Route>                                                                                         
-      </Routes>
+       </nav>
+       <Routes>
+
+          <Route path="/" element={<Jsx/>}></Route>
+          <Route path="/binding" element={<DataBinding/>}></Route>
+          <Route path="/users" element={<Users/>}></Route>
+
+       </Routes>
     </div>
-  )
+    </div>
+  )     
+   
 }
 export default App;
