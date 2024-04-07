@@ -19,5 +19,5 @@ function Users(){
             }</ul>
         </div>
     )
-}
+
 export default Users;
