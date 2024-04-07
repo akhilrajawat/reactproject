@@ -5,19 +5,6 @@ import {Routes , Navlink ,Route} from 'react-router-dom'
 function App(){
   return (
     <div>
-      <nav className="navbar navbar-expand navbar-lght bg-light">
-        <ul className="nav navbar-nav">
-          <li className="nav-item">
-            <Navlink className="nav-link" to="/">Jsx</Navlink>
-          </li>
-          <li className="nav-item">
-            <Navlink className="nav-link" to="/binding">DataBinding</Navlink>
-          </li>
-          <li className="nav-item">
-            <Navlink className="nav-link" to="/users">Users</Navlink>
-          </li>
-        </ul>
-      </nav>
      
     <Routes>
         <Route path="/" element={<Jsx/>}></Route>
