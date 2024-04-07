@@ -1,5 +1,5 @@
 import Jsx,{Greet} from"./containers/Jsx";
-import DataBinding from "./containers/DataBinding";
+import Databinding from "./containers/Databinding";
 import Users from './containers/Users'
 import{Routes,NavLink,Route} from 'react-router-dom';
 
@@ -13,7 +13,7 @@ function App(){
             <NavLink className="nav-link"to="/users">users</NavLink>
           </li>
           <li>
-            <NavLink className="nav-link"to="/binding">DataBinding</NavLink>
+            <NavLink className="nav-link"to="/binding">Databinding</NavLink>
           </li><li>
             <NavLink className="nav-link"to="/">Jsx</NavLink>
           </li>
@@ -22,7 +22,7 @@ function App(){
        <Routes>
 
           <Route path="/" element={<Jsx/>}></Route>
-          <Route path="/binding" element={<DataBinding/>}></Route>
+          <Route path="/binding" element={<Databinding/>}></Route>
           <Route path="/users" element={<Users/>}></Route>
 
        </Routes>
